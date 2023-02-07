@@ -1,0 +1,49 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+.layout {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 50px auto 50px;
+    grid-template-areas: "header header header header header" 
+                        "section section section aside aside"
+                        "footer footer footer footer footer ";
+    
+}
+header {
+    grid-area: header;
+    background-color: #03a9f4;
+    padding: 15px;
+}
+header::before {
+    content: "header";
+}
+section {
+    grid-area: section;
+    background-color: #ff5722;
+    padding: 15px;
+}
+section::before {
+    content: "section";
+}
+aside {
+    grid-area: aside;
+    background-color: #607d8b;
+    padding: 15px;
+}
+aside::before {
+    content: "aside";
+}
+footer {
+    grid-area: footer;
+    background-color: #009688;
+    padding: 15px;
+}
+footer::before {
+    content: "footer";
+}

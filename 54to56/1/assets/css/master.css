@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+div {
+    width: 600px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #eee;
+    letter-spacing: 12px;
+    position: relative;
+}
+div::first-letter {
+    color: orangered;
+}
+div::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -9px;
+    left: -9px;
+    width: 620px;
+    height: 76px;
+    background-image: linear-gradient(to right, #f44336 20%, #1e88e5 20%, #1e88e5 40%, #4caf50 40%, #4caf50 60%, #e91e63 60%, #e91e63 80%, #673ab7 80%);
+
+}
